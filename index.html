@@ -6,14 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Pinecone Router Simple Example</title>
 		<!--Import Views middleware-->
-		<script src="https://cdn.jsdelivr.net/npm/pinecone-router-middleware-views@0.0.3/dist/index.umd.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/pinecone-router-middleware-views@2.0.0/dist/views.min.js"></script>
 		<!--Import Pinecone Router-->
-		<script src="https://cdn.jsdelivr.net/npm/pinecone-router@0.3.0/dist/index.umd.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/pinecone-router@2.1.3/dist/router.min.js"></script>
 		<!--Import Alpine.js-->
-		<script
-			src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js"
-			defer>
-		</script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 		<!-- nProgress for loading bar -->
 		<script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
 		<link
@@ -23,14 +20,13 @@
 	</head>
 	<body class="bg-hex-0B2822 p-3">
 		<div x-data="router()" x-router>
-			<template x-route="/" x-view="home.html"></template>
-			<template x-route="/hello" x-view="hello.html"></template>
+			<template x-route="/" x-view="/views/home.html"></template>
 			<template
-				x-route="/hello/:name"
-				x-view="hello.html"
+				x-route="/hello/:name?"
+				x-view="/views/hello.html"
 				x-handler="checkname"
 			></template>
-			<template x-route="notfound" x-view="notfound.html"></template>
+			<template x-route="notfound" x-view="/views/notfound.html"></template>
 		</div>
 
 		<a href="/"
@@ -53,18 +49,9 @@
 			// the router component.
 			function router() {
 				return {
-					settings: {
-						middlewares: {
-							views: {
-								enable: true,
-								basePath: '/views/',
-							},
-						},
-					},
-
 					// this will validate the name in the /hello/:name route
 					checkname(context) {
-						if (context.params.name.toLowerCase() == 'home') {
+						if (context.params.name && context.params.name.toLowerCase() == 'home') {
 							// redirecting is as easy as return the context.redirect function.
 							return context.redirect('/');
 						}
