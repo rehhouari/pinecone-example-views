@@ -53,14 +53,12 @@
 			// the router component.
 			function router() {
 				return {
-					// this will validate the name in the /hello/:name route
 					checkname(context) {
 						if (
 							context.params.name &&
-							context.params.name.toLowerCase() == 'home'
+							context.params.name.toLowerCase() == 'rafik'
 						) {
-							// redirecting is as easy as return the context.redirect function.
-							return context.redirect('/');
+							console.log('we have the same name!')
 						}
 					},
 				};
