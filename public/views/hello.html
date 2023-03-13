@@ -3,7 +3,7 @@
 </h1>
 <input
 	type="text"
-	@change="$router.redirect('/hello/' + event.target.value)"
+	@change="$router.redirect($event.target.value == 'home'? '/' : '/hello/'+$event.target.value)"
 	:value="$router.params?.name ?? ''"
 	placeholder="Write your name"
 	class="p-3 focus:outline-none rounded-3xl max-w-full bg-hex-5FD3BC text-hex-0B2822 font-bold text-center my-2"
