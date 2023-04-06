@@ -2,15 +2,15 @@ lockfileVersion: 5.4
 
 specifiers:
   alpinejs: ^3.1.1
-  pinecone-router: ^2.1.3
-  pinecone-router-middleware-views: ^2.0.1
+  pinecone-router: ^3.0.1
+  pinecone-router-middleware-views: ^3.0.0
   vite: ^2.2.3
   vite-plugin-windicss: ^0.15.10
 
 dependencies:
   alpinejs: 3.11.1
-  pinecone-router: 2.1.3
-  pinecone-router-middleware-views: 2.0.1
+  pinecone-router: 3.0.1
+  pinecone-router-middleware-views: 3.0.0
   vite-plugin-windicss: 0.15.10_vite@2.9.15
 
 devDependencies:
@@ -507,12 +507,12 @@ packages:
     engines: {node: '>=8.6'}
     dev: false
 
-  /pinecone-router-middleware-views/2.0.1:
-    resolution: {integrity: sha512-HiGHe32LdgC+0T39j9GQeTG69Rp8D9KzfscDkoPIcm3oyrwWjNIrJ+EjHX5w5CB2dU3lQHsDp/du2SEkMbKSSQ==}
+  /pinecone-router-middleware-views/3.0.0:
+    resolution: {integrity: sha512-GRjsEnW2s7Ya2TopEvTbgKX41w710+MPEeN7LIb7aAialtTiS0RW+de4LrVOXg7oI26/iTF29GyZrtEJIHbVBw==}
     dev: false
 
-  /pinecone-router/2.1.3:
-    resolution: {integrity: sha512-vAxH2ZexKsRmBL0UmqGcC9/TXOubJLt/dElSUTyC7kM5BM564CNtVBmBNXPvN19Urpo5LnyZPMJVD2xkQ2BKrQ==}
+  /pinecone-router/3.0.1:
+    resolution: {integrity: sha512-shK1wnsp8jwbNJRRwJ92aX/x0uIYawgTYUi4Sk4wKacJnhgfEhbjN+BjjozV0G4UWOPDmVzlRtyZUnmgsyvlBA==}
     dev: false
 
   /pirates/4.0.5:
