@@ -3,14 +3,14 @@ lockfileVersion: 5.4
 specifiers:
   alpinejs: ^3.1.1
   pinecone-router: ^3.0.1
-  pinecone-router-middleware-views: ^3.0.1
+  pinecone-router-middleware-views: ^3.0.2
   vite: ^2.2.3
   vite-plugin-windicss: ^0.15.10
 
 dependencies:
   alpinejs: 3.11.1
   pinecone-router: 3.0.1
-  pinecone-router-middleware-views: 3.0.1
+  pinecone-router-middleware-views: 3.0.2
   vite-plugin-windicss: 0.15.10_vite@2.9.15
 
 devDependencies:
@@ -507,8 +507,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: false
 
-  /pinecone-router-middleware-views/3.0.1:
-    resolution: {integrity: sha512-qkldDJcsCg0W1sfkhzQhWCNV98wkyCpvNYTz6x0BQkJFM/Gu9H6paJIL4bH4t0/ZFvvovrM568u+XTbMGaaRvg==}
+  /pinecone-router-middleware-views/3.0.2:
+    resolution: {integrity: sha512-3KAOKZOcA190dGqxB8JATSsgC0E/YSUMzNAZPJY9PHZ5+XesF8qYoFohTANmnFHcYsIGsxyFTomPl8uD8js5FQ==}
     dev: false
 
   /pinecone-router/3.0.1:
